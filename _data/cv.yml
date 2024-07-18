@@ -1,0 +1,54 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Yantao Zhang
+    - name: Date of Birth
+      value: 15th August, 1998
+    - name: Languages
+      value: Chinese, English (CET-6)
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Master in Software Engineering
+      institution: Xi'an Jiaotong University, Xi'an, China
+      year: 2020 - 2023
+    - title: Bachelor in Electronic Information Engineering
+      institution: North China University of Science ans Technology, Tangshan, China
+      year: 2016 - 2020
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Software Engineer
+      institution: ZTE Corporation, Xi'an, China
+      year: 2023 - NOW
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2022-10
+      items:
+       - Postgraduate First Class Scholarship (XJTU)
+       - College Level (Top 20%)
+    - year: 2021-10
+      items:
+       - Postgraduate First Class Scholarship (XJTU)
+       - College Level (Top 20%)
+    - year: 2020-07
+      items:
+       - Outstanding Graduates (NCST)
+       - School Level (Top 5%)
+    - year: 2019-04
+      items:
+       - ASC Student Supercomputer Challenge
+       - Second Prize (National Level)
+    - year: 2018-07
+      items: 
+        - National Innovation and Entrepreneurship Competition of Intelligent Transportation for College Students
+        - Third Prize (National Level)
+    - year: 2017-09
+      items: 
+        - Contemporary Undergraduate Mathematical Contest in Modeling
+        - Second Prize (Province Level)
