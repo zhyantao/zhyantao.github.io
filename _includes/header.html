@@ -13,8 +13,9 @@
       >{{node.title}}</a
     >
     {% else %}
-    <a href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a>
+    <!-- <a href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a> -->
     {% endif %} {% endunless %} {% endfor %}
     <a href="{{site.baseurl}}/docs">DOCS</a>
+    <a href="{{site.baseurl}}/about/cv.pdf">ABOUT</a>
   </nav>
 </header>
