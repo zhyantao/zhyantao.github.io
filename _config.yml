@@ -6,6 +6,8 @@ simple_search: http://google.com/search
 description: A Jekyll theme for content-rich sites
 name: tufte
 markdown: kramdown
+kramdown:
+  input: GFM # 支持 GitHub 风格 markdown：表格、删除线、任务列表、自动链接
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 permalink: /articles/:short_year/:title
 timezone: Asia/Shanghai
@@ -17,6 +19,7 @@ exclude:
     "Rakefile",
     "UploadToGithub.Rakefile",
     "README.md",
+    "TEMPLATE.md",
   ]
 post:
   template: _post.txt

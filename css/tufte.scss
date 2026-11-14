@@ -662,6 +662,25 @@ ul.footer-links li {
   }
 }
 
+// "Edit on GitHub" link (same editing workflow as the docs site)
+.edit-link {
+  font-family: $sans-font;
+  font-size: 80%;
+  letter-spacing: 0.03em;
+  margin-top: 2rem;
+  & a {
+    color: $contrast-color;
+    text-decoration: none;
+    background: none;
+    &::before {
+      content: "\270E\00a0"; // ✎ pencil
+    }
+    &:hover {
+      color: $text-color;
+    }
+  }
+}
+
 // End of Nav and Footer styling area
 
 //Full width page styling stuff
