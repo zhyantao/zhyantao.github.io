@@ -2,8 +2,11 @@
 _site
 .sass-cache
 .jekyll-cache
-.DS\_Store
+.DS_Store
 config.codekit
+
+# WorkBuddy assistant workspace
+.workbuddy/
 
 # Created by https://www.toptal.com/developers/gitignore/api/jekyll
 # Edit at https://www.toptal.com/developers/gitignore?templates=jekyll
