@@ -36,10 +36,9 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "2.7.5" # Not needed with a .ruby-version file
+          ruby-version: "3.2" # 2.7 已 EOL，ubuntu-26.04 runner 不再提供
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
-          bundler: '2.4.22'
+          cache-version: 1 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
