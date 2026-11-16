@@ -1052,8 +1052,24 @@ hr.slender {
   font-size: 1.2rem;
 }
 
-.resume-award {
-  margin-left: 1em;
+.resume-awards {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  column-gap: 1.2em;
+  row-gap: 0.5rem;
+  align-items: baseline;
+}
+
+.resume-awards .resume-title {
+  font-size: 1.1rem;
+}
+
+.resume-awards .resume-award {
+  margin-left: 0;
+}
+
+.resume-awards .resume-date {
+  justify-self: end;
 }
 
 .resume-date {
@@ -1110,8 +1126,15 @@ hr.slender {
     flex-direction: column;
     gap: 0.1rem;
   }
-  .resume-award {
-    margin-left: 0;
+  .resume-awards {
+    grid-template-columns: 1fr auto;
+    row-gap: 0.6rem;
+  }
+  .resume-awards .resume-title {
+    grid-column: 1 / -1;
+  }
+  .resume-awards .resume-date {
+    justify-self: start;
   }
 }
 
