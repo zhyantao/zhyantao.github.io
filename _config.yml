@@ -15,9 +15,6 @@ exclude:
   [
     "Gemfile",
     "Gemfile.lock",
-    "Rakefile",
-    "UploadToGithub.Rakefile",
-    "README.md",
   ]
 editor: gvim
 git:
