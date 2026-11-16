@@ -649,6 +649,9 @@ ul.footer-links li {
   display: inline;
   padding: 0.5rem 0.25rem;
 }
+ul.footer-links svg {
+  vertical-align: middle;
+}
 .credits {
   padding: 1rem 0rem;
 }
@@ -1072,28 +1075,6 @@ hr.slender {
   justify-self: end;
 }
 
-.resume-pdf {
-  text-align: center;
-  font-family: $sans-font;
-  margin-top: 2.8rem;
-}
-
-.resume-pdf a {
-  color: #555;
-  text-decoration: none;
-  letter-spacing: 0.06em;
-  font-size: 1rem;
-}
-
-.resume-pdf a:hover {
-  color: $contrast-color;
-}
-
-.resume-pdf svg {
-  vertical-align: -0.15em;
-  margin-right: 0.35em;
-}
-
 .resume-date {
   font-family: $sans-font;
   color: #555;
@@ -1171,8 +1152,7 @@ hr.slender {
 @media print {
   header > nav.group,
   footer.site-footer,
-  html body span.print-footer,
-  .resume-pdf {
+  html body span.print-footer {
     display: none !important;
   }
   .resume {
