@@ -932,9 +932,18 @@ hr.slender {
 
 .resume {
   width: 90%;
+  max-width: 62rem;
   margin-left: auto;
   margin-right: auto;
   padding: 0 5%;
+}
+
+// Override the theme's narrow list/padding defaults for the resume
+.resume ul,
+.resume ol {
+  width: 100%;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
 }
 
 .resume-head {
@@ -992,6 +1001,7 @@ hr.slender {
 
 .resume-section {
   margin-top: 2.4rem;
+  padding: 0;
 }
 
 .resume-section h2 {
@@ -1033,7 +1043,7 @@ hr.slender {
   white-space: nowrap;
 }
 
-.resume p {
+.full-width article .resume p {
   width: 100%;
 }
 
