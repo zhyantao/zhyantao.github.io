@@ -951,14 +951,14 @@ hr.slender {
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 1.5rem 3rem;
-  margin: 2.5rem 0 3rem;
+  margin: 2.5rem 0 3.4rem;
 }
 
 .resume-head-side {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 0.3rem;
+  gap: 0.35rem;
   text-align: right;
 }
 
@@ -1000,7 +1000,7 @@ hr.slender {
   justify-content: end;
   font-family: $sans-font;
   font-size: 1.1rem;
-  margin-top: 0.35rem;
+  margin-top: 0.5rem;
 }
 
 .resume-contact a {
@@ -1020,7 +1020,7 @@ hr.slender {
 }
 
 .resume-section {
-  margin-top: 2.4rem;
+  margin-top: 2.6rem;
   padding: 0;
 }
 
@@ -1032,8 +1032,8 @@ hr.slender {
   font-size: 1.4rem;
   color: #7851a9;
   border-bottom: 1px solid #7851a9;
-  padding-bottom: 0.35rem;
-  margin-bottom: 1.1rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .resume-entry {
@@ -1049,14 +1049,14 @@ hr.slender {
 
 .resume-title {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .resume-awards {
   display: grid;
   grid-template-columns: auto auto 1fr;
   column-gap: 1.2em;
-  row-gap: 0.5rem;
+  row-gap: 0.6rem;
   align-items: baseline;
 }
 
@@ -1086,18 +1086,19 @@ hr.slender {
 .resume-meta {
   font-family: $sans-font;
   color: #555;
-  margin-top: 0.15rem;
+  margin-top: 0.3rem;
 }
 
 .resume-bullets {
   list-style: none;
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
 }
 
 .resume-bullets li {
   padding-left: 1em;
   text-indent: -1em;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.45rem;
+  line-height: 1.5;
 }
 
 .resume-bullets li::before {
