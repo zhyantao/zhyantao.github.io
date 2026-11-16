@@ -47,6 +47,15 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+      - name: Render resume to PDF
+        run: |
+          "$CHROME_BIN" --headless --no-sandbox --disable-gpu \
+            --no-pdf-header-footer \
+            --print-to-pdf="_site/resume.pdf" \
+            "file://$PWD/_site/index.html"
+          ls -la _site/resume.pdf
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3

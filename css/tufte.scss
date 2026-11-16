@@ -1148,7 +1148,8 @@ hr.slender {
 @media print {
   header > nav.group,
   footer.site-footer,
-  html body span.print-footer {
+  html body span.print-footer,
+  .resume-pdf {
     display: none !important;
   }
   .resume {
