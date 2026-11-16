@@ -966,10 +966,19 @@ hr.slender {
 .resume-objective {
   width: 100% !important;
   font-family: $sans-font;
-  color: #555;
-  font-size: 1.15rem;
-  margin-top: 0.6rem !important;
-  line-height: 1.6;
+  color: #444;
+  font-size: 1.25rem;
+  margin-top: 0.8rem !important;
+  line-height: 1.5;
+}
+
+.resume-subline {
+  width: 100% !important;
+  font-family: $sans-font;
+  color: #888;
+  font-size: 1rem;
+  margin-top: 0.3rem !important;
+  line-height: 1.5;
 }
 
 .resume-contact {
