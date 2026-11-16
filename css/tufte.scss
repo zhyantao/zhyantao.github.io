@@ -948,10 +948,18 @@ hr.slender {
 
 .resume-head {
   display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: start;
+  grid-template-columns: auto 1fr;
+  align-items: center;
   gap: 1.5rem 3rem;
   margin: 2.5rem 0 3rem;
+}
+
+.resume-head-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+  text-align: right;
 }
 
 .resume-name {
@@ -968,8 +976,8 @@ hr.slender {
   font-family: $sans-font;
   color: #444;
   font-size: 1.25rem;
-  margin-top: 0.8rem !important;
   line-height: 1.5;
+  margin: 0 !important;
 }
 
 .resume-subline {
@@ -977,8 +985,8 @@ hr.slender {
   font-family: $sans-font;
   color: #888;
   font-size: 1rem;
-  margin-top: 0.3rem !important;
   line-height: 1.5;
+  margin: 0 !important;
 }
 
 .resume-contact {
@@ -990,6 +998,7 @@ hr.slender {
   justify-content: end;
   font-family: $sans-font;
   font-size: 1.1rem;
+  margin-top: 0.35rem;
 }
 
 .resume-contact a {
@@ -1083,7 +1092,12 @@ hr.slender {
 @media screen and (max-width: 800px) {
   .resume-head {
     grid-template-columns: 1fr;
+    align-items: start;
     gap: 1.2rem;
+  }
+  .resume-head-side {
+    align-items: flex-start;
+    text-align: left;
   }
   .resume-contact {
     grid-template-columns: 1fr 1fr;
