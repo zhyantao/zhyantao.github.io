@@ -973,9 +973,10 @@ hr.slender {
 
 .resume-objective {
   width: 100% !important;
-  font-family: $sans-font;
-  color: #444;
-  font-size: 1.25rem;
+  font-family: $body-font;
+  font-style: italic;
+  color: #333;
+  font-size: 1.35rem;
   line-height: 1.5;
   margin: 0 !important;
 }
@@ -984,7 +985,8 @@ hr.slender {
   width: 100% !important;
   font-family: $sans-font;
   color: #888;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
   line-height: 1.5;
   margin: 0 !important;
 }
