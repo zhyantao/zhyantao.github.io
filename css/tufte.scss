@@ -649,16 +649,6 @@ ul.footer-links li {
   display: inline;
   padding: 0.5rem 0.25rem;
 }
-ul.footer-links li a {
-  display: inline-flex;
-  align-items: center;
-}
-ul.footer-links svg {
-  // Align the svg's ink with the icomoon glyphs' optical center
-  // (the icon font renders slightly above the middle of its line box).
-  position: relative;
-  top: -0.08em;
-}
 .credits {
   padding: 1rem 0rem;
 }
@@ -873,6 +863,9 @@ hr.slender {
 
 .icon-mail3:before {
   content: "\ea85";
+}
+.icon-download3:before {
+  content: "\ea38";
 }
 .icon-amazon:before {
   content: "\ea87";
