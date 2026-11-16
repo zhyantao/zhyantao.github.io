@@ -51,10 +51,15 @@ jobs:
         uses: browser-actions/setup-chrome@v1
       - name: Render resume to PDF
         run: |
+          # Serve _site over HTTP so absolute asset paths (/css/tufte.css) resolve
+          python3 -m http.server 8080 --directory _site > /dev/null 2>&1 &
+          SERVER_PID=$!
+          sleep 2
           "$CHROME_BIN" --headless --no-sandbox --disable-gpu \
             --no-pdf-header-footer \
             --print-to-pdf="_site/resume.pdf" \
-            "file://$PWD/_site/index.html"
+            "http://localhost:8080/index.html"
+          kill $SERVER_PID
           ls -la _site/resume.pdf
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
